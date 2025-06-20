@@ -1,0 +1,7 @@
+MOV AL, 0F0H
+MOV BL, 0AAH
+
+AND AL, BL    ; AL = AL AND BL
+OR AL, BL     ; AL = AL OR BL
+XOR AL, BL    ; AL = AL XOR BL
+NOT AL        ; AL = NOT AL

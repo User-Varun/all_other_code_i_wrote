@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <center>
+      <img id="main" src="./donate.jpg" width="400px" height="400px" />
+      <img
+        onmouseover="changeImage(this)"
+        id="first"
+        src="./jacket.jpg"
+        width="100px"
+        height="100px"
+      />&nbsp;&nbsp;&nbsp;&nbsp;
+
+      <img
+        onmouseover="changeImage(this)"
+        id="second"
+        src="./lotus.jpg"
+        width="100px"
+        height="100px"
+      />&nbsp;&nbsp;&nbsp;&nbsp;
+
+      <img
+        onmouseover="changeImage(this)"
+        id="third"
+        src="./van.jpeg"
+        width="100px"
+        height="100px"
+      />&nbsp;&nbsp;&nbsp;&nbsp;
+    </center>
+
+    <script>
+      function changeImage(currentImg) {
+        let mainImage = document.getElementById("main");
+
+        const temp = mainImage.src;
+        mainImage.src = currentImg.src;
+        currentImg.src = temp;
+      }
+    </script>
+  </body>
+</html>
